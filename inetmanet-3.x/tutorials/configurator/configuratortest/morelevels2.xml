@@ -1,0 +1,8 @@
+<config>
+	<interface hosts='*.Area1*' address='10.1.1.x' netmask='255.255.255.x'/>
+	<interface hosts='*.Area2*' address='10.1.2.x' netmask='255.255.255.x'/>
+	<interface hosts='*.Area3*' address='10.2.1.x' netmask='255.255.255.x'/>
+	<interface hosts='*.Area4*' address='10.2.2.x' netmask='255.255.255.x'/>
+	<interface hosts='*.Router*' address='10.x.x.x' netmask='255.x.x.x'/>
+	<autoroute metric='dataRate'/>
+</config>

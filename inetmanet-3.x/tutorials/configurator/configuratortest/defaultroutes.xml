@@ -1,0 +1,71 @@
+<config>
+   <interface hosts="Routes.Host0" names="eth0" address="10.0.0.1" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Router0" names="eth0" address="10.0.0.2" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Host1" names="eth0" address="10.0.0.5" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Router0" names="eth1" address="10.0.0.6" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Host2" names="eth0" address="10.0.0.9" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Router1" names="eth0" address="10.0.0.10" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Host3" names="eth0" address="10.0.0.13" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Router1" names="eth1" address="10.0.0.14" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Router0" names="eth2" address="10.0.0.17" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Router1" names="eth2" address="10.0.0.18" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Router0" names="eth3" address="10.0.0.21" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Router2" names="eth0" address="10.0.0.22" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Router1" names="eth3" address="10.0.0.25" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Router2" names="eth1" address="10.0.0.26" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Router2" names="eth2" address="10.0.0.29" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Host4" names="eth0" address="10.0.0.30" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Router2" names="eth3" address="10.0.0.33" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="Routes.Host5" names="eth0" address="10.0.0.34" netmask="255.255.255.252" metric="20"/>
+   <multicast-group hosts="Routes.Host0" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="Routes.Router0" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="Routes.Host1" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="Routes.Router0" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="Routes.Host2" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="Routes.Router1" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="Routes.Host3" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="Routes.Router1" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="Routes.Router0" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="Routes.Router1" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="Routes.Router0" interfaces="eth3" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="Routes.Router2" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="Routes.Router1" interfaces="eth3" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="Routes.Router2" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="Routes.Router2" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="Routes.Host4" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="Routes.Router2" interfaces="eth3" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="Routes.Host5" interfaces="eth0" address="224.0.0.1"/>
+   <route hosts="Routes.Host0" destination="10.0.0.0" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="Routes.Host0" destination="*" netmask="*" gateway="10.0.0.2" interface="eth0" metric="0"/>
+   <route hosts="Routes.Host1" destination="10.0.0.4" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="Routes.Host1" destination="*" netmask="*" gateway="10.0.0.6" interface="eth0" metric="0"/>
+   <route hosts="Routes.Host2" destination="10.0.0.8" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="Routes.Host2" destination="*" netmask="*" gateway="10.0.0.10" interface="eth0" metric="0"/>
+   <route hosts="Routes.Host3" destination="10.0.0.12" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="Routes.Host3" destination="*" netmask="*" gateway="10.0.0.14" interface="eth0" metric="0"/>
+   <route hosts="Routes.Router0" destination="10.0.0.18" netmask="255.255.255.255" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="Routes.Router0" destination="10.0.0.22" netmask="255.255.255.255" gateway="*" interface="eth3" metric="0"/>
+   <route hosts="Routes.Router0" destination="10.0.0.25" netmask="255.255.255.255" gateway="10.0.0.18" interface="eth2" metric="0"/>
+   <route hosts="Routes.Router0" destination="10.0.0.0" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="Routes.Router0" destination="10.0.0.4" netmask="255.255.255.252" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="Routes.Router0" destination="10.0.0.8" netmask="255.255.255.248" gateway="10.0.0.22" interface="eth3" metric="0"/>
+   <route hosts="Routes.Router0" destination="10.0.0.0" netmask="255.255.255.192" gateway="10.0.0.22" interface="eth3" metric="0"/>
+   <route hosts="Routes.Router1" destination="10.0.0.17" netmask="255.255.255.255" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="Routes.Router1" destination="10.0.0.21" netmask="255.255.255.255" gateway="10.0.0.17" interface="eth2" metric="0"/>
+   <route hosts="Routes.Router1" destination="10.0.0.26" netmask="255.255.255.255" gateway="*" interface="eth3" metric="0"/>
+   <route hosts="Routes.Router1" destination="10.0.0.8" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="Routes.Router1" destination="10.0.0.12" netmask="255.255.255.252" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="Routes.Router1" destination="10.0.0.0" netmask="255.255.255.248" gateway="10.0.0.17" interface="eth2" metric="0"/>
+   <route hosts="Routes.Router1" destination="10.0.0.0" netmask="255.255.255.192" gateway="10.0.0.26" interface="eth3" metric="0"/>
+   <route hosts="Routes.Router2" destination="10.0.0.18" netmask="255.255.255.255" gateway="10.0.0.25" interface="eth1" metric="0"/>
+   <route hosts="Routes.Router2" destination="10.0.0.21" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="Routes.Router2" destination="10.0.0.25" netmask="255.255.255.255" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="Routes.Router2" destination="10.0.0.28" netmask="255.255.255.252" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="Routes.Router2" destination="10.0.0.32" netmask="255.255.255.252" gateway="*" interface="eth3" metric="0"/>
+   <route hosts="Routes.Router2" destination="10.0.0.8" netmask="255.255.255.248" gateway="10.0.0.25" interface="eth1" metric="0"/>
+   <route hosts="Routes.Router2" destination="10.0.0.0" netmask="255.255.255.224" gateway="10.0.0.21" interface="eth0" metric="0"/>
+   <route hosts="Routes.Host4" destination="10.0.0.28" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="Routes.Host4" destination="*" netmask="*" gateway="10.0.0.29" interface="eth0" metric="0"/>
+   <route hosts="Routes.Host5" destination="10.0.0.32" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="Routes.Host5" destination="*" netmask="*" gateway="10.0.0.33" interface="eth0" metric="0"/>
+</config>

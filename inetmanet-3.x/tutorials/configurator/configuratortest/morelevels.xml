@@ -1,0 +1,142 @@
+<config>
+   <interface hosts="MoreLevels.Host0" names="eth0" address="10.1.0.x" netmask="255.255.255.x" metric="20"/>
+   <interface hosts="MoreLevels.Router0" names="eth0" address="10.1.0.x" netmask="255.255.255.x" metric="20"/>
+   <interface hosts="MoreLevels.Host1" names="eth0" address="10.0.x.x" netmask="255.255.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Router1" names="eth1" address="10.0.x.x" netmask="255.255.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Host2" names="eth0" address="10.1.0.x" netmask="255.255.255.x" metric="20"/>
+   <interface hosts="MoreLevels.Router0" names="eth1" address="10.1.0.x" netmask="255.255.255.x" metric="20"/>
+   <interface hosts="MoreLevels.Host3" names="eth0" address="10.0.x.x" netmask="255.255.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Router1" names="eth0" address="10.0.x.x" netmask="255.255.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Router0" names="eth2" address="10.1.0.x" netmask="255.255.255.x" metric="20"/>
+   <interface hosts="MoreLevels.Router2" names="eth0" address="10.1.x.x" netmask="255.255.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Router1" names="eth2" address="10.0.x.x" netmask="255.255.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Router3" names="eth0" address="10.x.x.x" netmask="255.x.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Router2" names="eth1" address="10.1.x.x" netmask="255.255.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Host4" names="eth0" address="10.1.x.x" netmask="255.255.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Router2" names="eth2" address="10.1.x.x" netmask="255.255.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Router3" names="eth1" address="10.x.x.x" netmask="255.x.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Router3" names="eth2" address="10.x.x.x" netmask="255.x.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Host5" names="eth0" address="10.x.x.x" netmask="255.x.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Router3" names="eth3" address="10.x.x.x" netmask="255.x.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Host6" names="eth0" address="10.x.x.x" netmask="255.x.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Router3" names="eth4" address="10.x.x.x" netmask="255.x.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Router4" names="eth2" address="11.x.x.x" netmask="255.x.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Router4" names="eth0" address="11.x.x.x" netmask="255.x.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Host7" names="eth0" address="11.x.x.x" netmask="255.x.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Router4" names="eth1" address="11.x.x.x" netmask="255.x.x.x" metric="20"/>
+   <interface hosts="MoreLevels.Host8" names="eth0" address="11.x.x.x" netmask="255.x.x.x" metric="20"/>
+   <multicast-group hosts="MoreLevels.Host0" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="MoreLevels.Router0" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Host1" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="MoreLevels.Router1" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Host2" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="MoreLevels.Router0" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Host3" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="MoreLevels.Router1" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Router0" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Router2" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Router1" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Router3" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Router2" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Host4" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="MoreLevels.Router2" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Router3" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Router3" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Host5" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="MoreLevels.Router3" interfaces="eth3" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Host6" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="MoreLevels.Router3" interfaces="eth4" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Router4" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Router4" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Host7" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="MoreLevels.Router4" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="MoreLevels.Host8" interfaces="eth0" address="224.0.0.1"/>
+   <route hosts="MoreLevels.Host0" destination="10.0.0.0" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Host0" destination="10.0.0.0" netmask="255.255.255.252" gateway="*" interface="eth0" metric="20"/>
+   <route hosts="MoreLevels.Host0" destination="127.0.0.0" netmask="255.0.0.0" gateway="*" interface="lo0" metric="1"/>
+   <route hosts="MoreLevels.Host0" destination="*" netmask="*" gateway="10.0.0.2" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Host1" destination="10.0.0.4" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Host1" destination="10.0.0.4" netmask="255.255.255.252" gateway="*" interface="eth0" metric="20"/>
+   <route hosts="MoreLevels.Host1" destination="127.0.0.0" netmask="255.0.0.0" gateway="*" interface="lo0" metric="1"/>
+   <route hosts="MoreLevels.Host1" destination="*" netmask="*" gateway="10.0.0.6" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Host2" destination="10.0.0.8" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Host2" destination="10.0.0.8" netmask="255.255.255.252" gateway="*" interface="eth0" metric="20"/>
+   <route hosts="MoreLevels.Host2" destination="127.0.0.0" netmask="255.0.0.0" gateway="*" interface="lo0" metric="1"/>
+   <route hosts="MoreLevels.Host2" destination="*" netmask="*" gateway="10.0.0.10" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Host3" destination="10.0.0.12" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Host3" destination="10.0.0.12" netmask="255.255.255.252" gateway="*" interface="eth0" metric="20"/>
+   <route hosts="MoreLevels.Host3" destination="127.0.0.0" netmask="255.0.0.0" gateway="*" interface="lo0" metric="1"/>
+   <route hosts="MoreLevels.Host3" destination="*" netmask="*" gateway="10.0.0.14" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Router0" destination="10.0.0.18" netmask="255.255.255.255" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="MoreLevels.Router0" destination="10.0.0.0" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Router0" destination="10.0.0.0" netmask="255.255.255.252" gateway="*" interface="eth0" metric="20"/>
+   <route hosts="MoreLevels.Router0" destination="10.0.0.8" netmask="255.255.255.252" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="MoreLevels.Router0" destination="10.0.0.8" netmask="255.255.255.252" gateway="*" interface="eth1" metric="20"/>
+   <route hosts="MoreLevels.Router0" destination="10.0.0.16" netmask="255.255.255.252" gateway="*" interface="eth2" metric="20"/>
+   <route hosts="MoreLevels.Router0" destination="10.0.0.0" netmask="255.255.255.192" gateway="10.0.0.18" interface="eth2" metric="0"/>
+   <route hosts="MoreLevels.Router0" destination="127.0.0.0" netmask="255.0.0.0" gateway="*" interface="lo0" metric="1"/>
+   <route hosts="MoreLevels.Router1" destination="10.0.0.22" netmask="255.255.255.255" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="MoreLevels.Router1" destination="10.0.0.4" netmask="255.255.255.252" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="MoreLevels.Router1" destination="10.0.0.4" netmask="255.255.255.252" gateway="*" interface="eth1" metric="20"/>
+   <route hosts="MoreLevels.Router1" destination="10.0.0.12" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Router1" destination="10.0.0.12" netmask="255.255.255.252" gateway="*" interface="eth0" metric="20"/>
+   <route hosts="MoreLevels.Router1" destination="10.0.0.20" netmask="255.255.255.252" gateway="*" interface="eth2" metric="20"/>
+   <route hosts="MoreLevels.Router1" destination="10.0.0.0" netmask="255.255.255.192" gateway="10.0.0.22" interface="eth2" metric="0"/>
+   <route hosts="MoreLevels.Router1" destination="127.0.0.0" netmask="255.0.0.0" gateway="*" interface="lo0" metric="1"/>
+   <route hosts="MoreLevels.Router2" destination="10.0.0.17" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Router2" destination="10.0.0.30" netmask="255.255.255.255" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="MoreLevels.Router2" destination="10.0.0.4" netmask="255.255.255.252" gateway="10.0.0.30" interface="eth2" metric="0"/>
+   <route hosts="MoreLevels.Router2" destination="10.0.0.12" netmask="255.255.255.252" gateway="10.0.0.30" interface="eth2" metric="0"/>
+   <route hosts="MoreLevels.Router2" destination="10.0.0.16" netmask="255.255.255.252" gateway="*" interface="eth0" metric="20"/>
+   <route hosts="MoreLevels.Router2" destination="10.0.0.24" netmask="255.255.255.252" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="MoreLevels.Router2" destination="10.0.0.24" netmask="255.255.255.252" gateway="*" interface="eth1" metric="20"/>
+   <route hosts="MoreLevels.Router2" destination="10.0.0.28" netmask="255.255.255.252" gateway="*" interface="eth2" metric="20"/>
+   <route hosts="MoreLevels.Router2" destination="10.0.0.0" netmask="255.255.255.240" gateway="10.0.0.17" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Router2" destination="10.0.0.0" netmask="255.255.255.192" gateway="10.0.0.30" interface="eth2" metric="0"/>
+   <route hosts="MoreLevels.Router2" destination="127.0.0.0" netmask="255.0.0.0" gateway="*" interface="lo0" metric="1"/>
+   <route hosts="MoreLevels.Host4" destination="10.0.0.24" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Host4" destination="10.0.0.24" netmask="255.255.255.252" gateway="*" interface="eth0" metric="20"/>
+   <route hosts="MoreLevels.Host4" destination="127.0.0.0" netmask="255.0.0.0" gateway="*" interface="lo0" metric="1"/>
+   <route hosts="MoreLevels.Host4" destination="*" netmask="*" gateway="10.0.0.25" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.21" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.29" netmask="255.255.255.255" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.42" netmask="255.255.255.255" gateway="*" interface="eth4" metric="0"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.4" netmask="255.255.255.252" gateway="10.0.0.21" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.12" netmask="255.255.255.252" gateway="10.0.0.21" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.20" netmask="255.255.255.252" gateway="*" interface="eth0" metric="20"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.28" netmask="255.255.255.252" gateway="*" interface="eth1" metric="20"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.32" netmask="255.255.255.252" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.32" netmask="255.255.255.252" gateway="*" interface="eth2" metric="20"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.36" netmask="255.255.255.252" gateway="*" interface="eth3" metric="0"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.36" netmask="255.255.255.252" gateway="*" interface="eth3" metric="20"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.40" netmask="255.255.255.252" gateway="*" interface="eth4" metric="20"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.0" netmask="255.255.255.240" gateway="10.0.0.29" interface="eth1" metric="0"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.0" netmask="255.255.255.240" gateway="10.0.0.21" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.0" netmask="255.255.255.224" gateway="10.0.0.29" interface="eth1" metric="0"/>
+   <route hosts="MoreLevels.Router3" destination="10.0.0.32" netmask="255.255.255.224" gateway="10.0.0.42" interface="eth4" metric="0"/>
+   <route hosts="MoreLevels.Router3" destination="127.0.0.0" netmask="255.0.0.0" gateway="*" interface="lo0" metric="1"/>
+   <route hosts="MoreLevels.Host5" destination="10.0.0.32" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Host5" destination="10.0.0.32" netmask="255.255.255.252" gateway="*" interface="eth0" metric="20"/>
+   <route hosts="MoreLevels.Host5" destination="127.0.0.0" netmask="255.0.0.0" gateway="*" interface="lo0" metric="1"/>
+   <route hosts="MoreLevels.Host5" destination="*" netmask="*" gateway="10.0.0.33" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Host6" destination="10.0.0.36" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Host6" destination="10.0.0.36" netmask="255.255.255.252" gateway="*" interface="eth0" metric="20"/>
+   <route hosts="MoreLevels.Host6" destination="127.0.0.0" netmask="255.0.0.0" gateway="*" interface="lo0" metric="1"/>
+   <route hosts="MoreLevels.Host6" destination="*" netmask="*" gateway="10.0.0.37" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Router4" destination="10.0.0.41" netmask="255.255.255.255" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="MoreLevels.Router4" destination="10.0.0.40" netmask="255.255.255.252" gateway="*" interface="eth2" metric="20"/>
+   <route hosts="MoreLevels.Router4" destination="10.0.0.44" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Router4" destination="10.0.0.44" netmask="255.255.255.252" gateway="*" interface="eth0" metric="20"/>
+   <route hosts="MoreLevels.Router4" destination="10.0.0.48" netmask="255.255.255.252" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="MoreLevels.Router4" destination="10.0.0.48" netmask="255.255.255.252" gateway="*" interface="eth1" metric="20"/>
+   <route hosts="MoreLevels.Router4" destination="10.0.0.0" netmask="255.255.255.192" gateway="10.0.0.41" interface="eth2" metric="0"/>
+   <route hosts="MoreLevels.Router4" destination="127.0.0.0" netmask="255.0.0.0" gateway="*" interface="lo0" metric="1"/>
+   <route hosts="MoreLevels.Host7" destination="10.0.0.44" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Host7" destination="10.0.0.44" netmask="255.255.255.252" gateway="*" interface="eth0" metric="20"/>
+   <route hosts="MoreLevels.Host7" destination="127.0.0.0" netmask="255.0.0.0" gateway="*" interface="lo0" metric="1"/>
+   <route hosts="MoreLevels.Host7" destination="*" netmask="*" gateway="10.0.0.45" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Host8" destination="10.0.0.48" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="MoreLevels.Host8" destination="10.0.0.48" netmask="255.255.255.252" gateway="*" interface="eth0" metric="20"/>
+   <route hosts="MoreLevels.Host8" destination="127.0.0.0" netmask="255.0.0.0" gateway="*" interface="lo0" metric="1"/>
+   <route hosts="MoreLevels.Host8" destination="*" netmask="*" gateway="10.0.0.49" interface="eth0" metric="0"/>
+</config>

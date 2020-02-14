@@ -1,0 +1,14 @@
+<config>
+   <interface hosts="Simple.Host0" names="eth0" address="10.0.0.1" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="Simple.Host1" names="eth0" address="10.0.0.2" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="Simple.Host3" names="eth0" address="10.0.0.3" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="Simple.Host2" names="eth0" address="10.0.0.4" netmask="255.255.255.248" metric="20"/>
+   <multicast-group hosts="Simple.Host0" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="Simple.Host1" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="Simple.Host3" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="Simple.Host2" interfaces="eth0" address="224.0.0.1"/>
+   <route hosts="Simple.Host0" destination="10.0.0.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="Simple.Host1" destination="10.0.0.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="Simple.Host2" destination="10.0.0.0" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="Simple.Host3" destination="10.0.0.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+</config>

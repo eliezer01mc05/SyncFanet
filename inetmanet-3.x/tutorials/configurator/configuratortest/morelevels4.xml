@@ -1,0 +1,27 @@
+<config>
+	<interface hosts='*.Area1_Host*' address='10.1.1.x' netmask='255.255.255.x'/>
+	<interface hosts='*.Area2_Host*' address='10.1.2.x' netmask='255.255.255.x'/>
+	<interface hosts='*.Area3_Host*' address='10.2.1.x' netmask='255.255.255.x'/>
+	<interface hosts='*.Area4_Host*' address='10.2.2.x' netmask='255.255.255.x'/>
+	<interface hosts='*.Area1router' address='10.1.1.x' netmask='255.255.255.x'/>
+	<interface hosts='*.Area2router' address='10.1.2.x' netmask='255.255.255.x'/>
+	<interface hosts='*.Area3router' address='10.2.1.x' netmask='255.255.255.x'/>
+	<interface hosts='*.Area4router' address='10.2.2.x' netmask='255.255.255.x'/>
+	<interface hosts='*.Router1' towards='*.Area*' address='10.1.x.x' netmask='255.255.x.x'/>
+	<interface hosts='*.Router1' towards='*.Router2' address='10.3.x.x' netmask='255.255.x.x.'/>
+	<interface hosts='*.Router2' towards='*.Area*' address='10.2.x.x' netmask='255.255.x.x'/>
+	<interface hosts='*.Router2' towards='*.Router1' address='10.3.x.x' netmask='255.255.x.x'/>
+	<route hosts='*.Area1_Host*' destination='*' gateway='Area1router'/>
+	<route hosts='*.Area2_Host*' destination='*' gateway='Area2router'/>
+	<route hosts='*.Area3_Host*' destination='*' gateway='Area3router'/>
+	<route hosts='*.Area4_Host*' destination='*' gateway='Area4router'/>
+	<route hosts='*.Area{1-2}router' destination='10.0.0.0' netmask='255.0.0.0' gateway='Router1'/>
+	<route hosts='*.Area{3-4}router' destination='10.0.0.0' netmask='255.0.0.0' gateway='Router2'/>
+	<route hosts='*.Router1' destination='10.1.1.0' netmask='255.255.255.0' gateway='Area1router'/>
+	<route hosts='*.Router1' destination='10.1.2.0' netmask='255.255.255.0' gateway='Area2router'/>
+	<route hosts='*.Router1' destination='10.2.0.0' netmask='255.255.0.0' gateway='Router2'/>
+	<route hosts='*.Router2' destination='10.2.1.0' netmask='255.255.255.0' gateway='Area3router'/>
+	<route hosts='*.Router2' destination='10.2.2.0' netmask='255.255.255.0' gateway='Area4router'/>
+	<route hosts='*.Router2' destination='10.1.0.0' netmask='255.255.0.0' gateway='Router1'/>
+</config>
+	

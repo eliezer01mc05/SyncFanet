@@ -1,0 +1,5 @@
+<config>
+	<interface hosts='*.Router1' address='10.1.x.x' netmask='255.x.x.x'/>
+	<interface hosts='*.Router2' address='10.2.x.x' netmask='255.x.x.x'/>
+	<interface hosts='**' address='10.x.x.x' netmask='255.x.x.x'/>
+</config>

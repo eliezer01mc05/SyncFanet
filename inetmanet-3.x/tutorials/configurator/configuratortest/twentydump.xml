@@ -1,0 +1,221 @@
+<config>
+   <interface hosts="twentyeight.Area1Router" names="eth0" address="10.0.0.1" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="twentyeight.Area3Router" names="eth1" address="10.0.0.2" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="twentyeight.Area1Router" names="eth1" address="10.0.0.5" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="twentyeight.Area1wirelessHost3" names="eth0" address="10.0.0.6" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="twentyeight.Area1Router" names="eth2" address="10.0.0.9" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="twentyeight.Area2Router" names="eth0" address="10.0.0.10" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="twentyeight.Area1wirelessHost1" names="wlan0" address="10.0.0.17" netmask="255.255.255.248" metric="-2147483648"/>
+   <interface hosts="twentyeight.Area1wirelessHost3" names="wlan0" address="10.0.0.18" netmask="255.255.255.248" metric="-2147483648"/>
+   <interface hosts="twentyeight.Area1wirelessHost2" names="wlan0" address="10.0.0.19" netmask="255.255.255.248" metric="-2147483648"/>
+   <interface hosts="twentyeight.Area3Host3" names="eth0" address="10.0.0.25" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyeight.Area3Host1" names="eth0" address="10.0.0.26" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyeight.Area3Host2" names="eth0" address="10.0.0.27" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyeight.Area3Router" names="eth0" address="10.0.0.28" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyeight.Area3Router" names="eth2" address="10.0.0.33" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="twentyeight.Area2Router" names="eth1" address="10.0.0.34" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="twentyeight.Area2Router" names="eth2" address="10.0.0.41" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyeight.Area2wirelessHost1" names="wlan0" address="10.0.0.42" netmask="255.255.255.248" metric="-2147483648"/>
+   <interface hosts="twentyeight.Area2wirelessHost2" names="wlan0" address="10.0.0.43" netmask="255.255.255.248" metric="-2147483648"/>
+   <interface hosts="twentyeight.Area2wirelessHost3" names="wlan0" address="10.0.0.44" netmask="255.255.255.248" metric="-2147483648"/>
+   <multicast-group hosts="twentyeight.Area1Router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyeight.Area3Router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyeight.Area1Router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyeight.Area1wirelessHost3" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyeight.Area1Router" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyeight.Area2Router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyeight.Area1wirelessHost1" interfaces="wlan0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyeight.Area1wirelessHost3" interfaces="wlan0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyeight.Area1wirelessHost2" interfaces="wlan0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyeight.Area3Host3" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyeight.Area3Host1" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyeight.Area3Host2" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyeight.Area3Router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyeight.Area3Router" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyeight.Area2Router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyeight.Area2Router" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyeight.Area2wirelessHost1" interfaces="wlan0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyeight.Area2wirelessHost2" interfaces="wlan0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyeight.Area2wirelessHost3" interfaces="wlan0" address="224.0.0.1"/>
+   <wireless interfaces="twentyeight.Area1wirelessHost1%wlan0 twentyeight.Area1wirelessHost3%wlan0 twentyeight.Area1wirelessHost2%wlan0"/>
+   <wireless interfaces="twentyeight.Area2wirelessHost1%wlan0 twentyeight.Area2wirelessHost2%wlan0 twentyeight.Area2wirelessHost3%wlan0"/>
+   <route hosts="twentyeight.Area1Router" destination="10.0.0.6" netmask="255.255.255.255" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="twentyeight.Area1Router" destination="10.0.0.10" netmask="255.255.255.255" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="twentyeight.Area1Router" destination="10.0.0.17" netmask="255.255.255.255" gateway="10.0.0.6" interface="eth1" metric="0"/>
+   <route hosts="twentyeight.Area1Router" destination="10.0.0.18" netmask="255.255.255.255" gateway="10.0.0.6" interface="eth1" metric="0"/>
+   <route hosts="twentyeight.Area1Router" destination="10.0.0.19" netmask="255.255.255.255" gateway="10.0.0.6" interface="eth1" metric="0"/>
+   <route hosts="twentyeight.Area1Router" destination="10.0.0.25" netmask="255.255.255.255" gateway="10.0.0.2" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1Router" destination="10.0.0.26" netmask="255.255.255.255" gateway="10.0.0.2" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1Router" destination="10.0.0.27" netmask="255.255.255.255" gateway="10.0.0.2" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1Router" destination="10.0.0.28" netmask="255.255.255.255" gateway="10.0.0.2" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1Router" destination="10.0.0.42" netmask="255.255.255.255" gateway="10.0.0.10" interface="eth2" metric="0"/>
+   <route hosts="twentyeight.Area1Router" destination="10.0.0.43" netmask="255.255.255.255" gateway="10.0.0.10" interface="eth2" metric="0"/>
+   <route hosts="twentyeight.Area1Router" destination="10.0.0.44" netmask="255.255.255.255" gateway="10.0.0.10" interface="eth2" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.1" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.2" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.5" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.6" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.9" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.10" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.18" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.19" netmask="255.255.255.255" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.25" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.26" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.27" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.28" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.33" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.34" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.41" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.42" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.43" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost1" destination="10.0.0.44" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.1" netmask="255.255.255.255" gateway="10.0.0.5" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.2" netmask="255.255.255.255" gateway="10.0.0.5" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.5" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.9" netmask="255.255.255.255" gateway="10.0.0.5" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.10" netmask="255.255.255.255" gateway="10.0.0.5" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.17" netmask="255.255.255.255" gateway="10.0.0.19" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.19" netmask="255.255.255.255" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.25" netmask="255.255.255.255" gateway="10.0.0.5" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.26" netmask="255.255.255.255" gateway="10.0.0.5" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.27" netmask="255.255.255.255" gateway="10.0.0.5" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.28" netmask="255.255.255.255" gateway="10.0.0.5" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.33" netmask="255.255.255.255" gateway="10.0.0.5" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.34" netmask="255.255.255.255" gateway="10.0.0.5" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.41" netmask="255.255.255.255" gateway="10.0.0.5" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.42" netmask="255.255.255.255" gateway="10.0.0.5" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.43" netmask="255.255.255.255" gateway="10.0.0.5" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost3" destination="10.0.0.44" netmask="255.255.255.255" gateway="10.0.0.5" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.1" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.2" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.5" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.6" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.9" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.10" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.17" netmask="255.255.255.255" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.18" netmask="255.255.255.255" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.25" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.26" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.27" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.28" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.33" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.34" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.41" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.42" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.43" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area1wirelessHost2" destination="10.0.0.44" netmask="255.255.255.255" gateway="10.0.0.18" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area3Host3" destination="10.0.0.1" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host3" destination="10.0.0.6" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host3" destination="10.0.0.10" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host3" destination="10.0.0.17" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host3" destination="10.0.0.18" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host3" destination="10.0.0.19" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host3" destination="10.0.0.26" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host3" destination="10.0.0.27" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host3" destination="10.0.0.28" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host3" destination="10.0.0.42" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host3" destination="10.0.0.43" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host3" destination="10.0.0.44" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host2" destination="10.0.0.1" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host2" destination="10.0.0.6" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host2" destination="10.0.0.10" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host2" destination="10.0.0.17" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host2" destination="10.0.0.18" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host2" destination="10.0.0.19" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host2" destination="10.0.0.25" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host2" destination="10.0.0.26" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host2" destination="10.0.0.28" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host2" destination="10.0.0.42" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host2" destination="10.0.0.43" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host2" destination="10.0.0.44" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host1" destination="10.0.0.1" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host1" destination="10.0.0.6" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host1" destination="10.0.0.10" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host1" destination="10.0.0.17" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host1" destination="10.0.0.18" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host1" destination="10.0.0.19" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host1" destination="10.0.0.25" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host1" destination="10.0.0.27" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host1" destination="10.0.0.28" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host1" destination="10.0.0.42" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host1" destination="10.0.0.43" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Host1" destination="10.0.0.44" netmask="255.255.255.255" gateway="10.0.0.28" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Router" destination="10.0.0.1" netmask="255.255.255.255" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="twentyeight.Area3Router" destination="10.0.0.6" netmask="255.255.255.255" gateway="10.0.0.1" interface="eth1" metric="0"/>
+   <route hosts="twentyeight.Area3Router" destination="10.0.0.10" netmask="255.255.255.255" gateway="10.0.0.34" interface="eth2" metric="0"/>
+   <route hosts="twentyeight.Area3Router" destination="10.0.0.17" netmask="255.255.255.255" gateway="10.0.0.1" interface="eth1" metric="0"/>
+   <route hosts="twentyeight.Area3Router" destination="10.0.0.18" netmask="255.255.255.255" gateway="10.0.0.1" interface="eth1" metric="0"/>
+   <route hosts="twentyeight.Area3Router" destination="10.0.0.19" netmask="255.255.255.255" gateway="10.0.0.1" interface="eth1" metric="0"/>
+   <route hosts="twentyeight.Area3Router" destination="10.0.0.25" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Router" destination="10.0.0.26" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Router" destination="10.0.0.27" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area3Router" destination="10.0.0.42" netmask="255.255.255.255" gateway="10.0.0.34" interface="eth2" metric="0"/>
+   <route hosts="twentyeight.Area3Router" destination="10.0.0.43" netmask="255.255.255.255" gateway="10.0.0.34" interface="eth2" metric="0"/>
+   <route hosts="twentyeight.Area3Router" destination="10.0.0.44" netmask="255.255.255.255" gateway="10.0.0.34" interface="eth2" metric="0"/>
+   <route hosts="twentyeight.Area2Router" destination="10.0.0.1" netmask="255.255.255.255" gateway="10.0.0.9" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area2Router" destination="10.0.0.6" netmask="255.255.255.255" gateway="10.0.0.9" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area2Router" destination="10.0.0.17" netmask="255.255.255.255" gateway="10.0.0.9" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area2Router" destination="10.0.0.18" netmask="255.255.255.255" gateway="10.0.0.9" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area2Router" destination="10.0.0.19" netmask="255.255.255.255" gateway="10.0.0.9" interface="eth0" metric="0"/>
+   <route hosts="twentyeight.Area2Router" destination="10.0.0.25" netmask="255.255.255.255" gateway="10.0.0.33" interface="eth1" metric="0"/>
+   <route hosts="twentyeight.Area2Router" destination="10.0.0.26" netmask="255.255.255.255" gateway="10.0.0.33" interface="eth1" metric="0"/>
+   <route hosts="twentyeight.Area2Router" destination="10.0.0.27" netmask="255.255.255.255" gateway="10.0.0.33" interface="eth1" metric="0"/>
+   <route hosts="twentyeight.Area2Router" destination="10.0.0.28" netmask="255.255.255.255" gateway="10.0.0.33" interface="eth1" metric="0"/>
+   <route hosts="twentyeight.Area2Router" destination="10.0.0.42" netmask="255.255.255.255" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="twentyeight.Area2Router" destination="10.0.0.43" netmask="255.255.255.255" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="twentyeight.Area2Router" destination="10.0.0.44" netmask="255.255.255.255" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.1" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.2" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.5" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.6" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.9" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.10" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.17" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.18" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.19" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.25" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.26" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.27" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.28" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.33" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.34" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.41" netmask="255.255.255.255" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.43" netmask="255.255.255.255" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost1" destination="10.0.0.44" netmask="255.255.255.255" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.1" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.2" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.5" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.6" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.9" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.10" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.17" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.18" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.19" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.25" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.26" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.27" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.28" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.33" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.34" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.41" netmask="255.255.255.255" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.42" netmask="255.255.255.255" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost2" destination="10.0.0.44" netmask="255.255.255.255" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.1" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.2" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.5" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.6" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.9" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.10" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.17" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.18" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.19" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.25" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.26" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.27" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.28" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.33" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.34" netmask="255.255.255.255" gateway="10.0.0.41" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.41" netmask="255.255.255.255" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.42" netmask="255.255.255.255" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyeight.Area2wirelessHost3" destination="10.0.0.43" netmask="255.255.255.255" gateway="*" interface="wlan0" metric="0"/>
+</config>

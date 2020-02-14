@@ -1,0 +1,4 @@
+<config>
+		<interface hosts='**' address='10.x.x.x' netmask='255.x.x.x'/>
+      <route hosts="Routes.Router0" destination="10.0.0.13" netmask="255.255.255.255" gateway="10.0.0.22" interface="eth3" metric="0"/>
+</config>

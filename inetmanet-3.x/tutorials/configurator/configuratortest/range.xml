@@ -1,0 +1,4 @@
+<config>
+	<interface hosts='*.Host{0-1}' names='eth0' address='10.0.0.x'/>
+	<interface hosts='*.Host{2-3}' names='eth0' address='10.0.1.x'/>
+</config>

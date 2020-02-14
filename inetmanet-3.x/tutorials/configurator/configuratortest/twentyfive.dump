@@ -1,0 +1,118 @@
+<config>
+   <interface hosts="twentyfour.Area1Subnet1Host0" names="eth0" address="10.1.1.1" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area1Subnet1Host1" names="eth0" address="10.1.1.2" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area1Subnet1Host2" names="eth0" address="10.1.1.3" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area1Router" names="eth0" address="10.1.1.4" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area2Subnet1Host1" names="eth0" address="10.2.1.1" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area2Subnet1Host2" names="eth0" address="10.2.1.2" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area2Subnet1Host3" names="eth0" address="10.2.1.3" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area2Router" names="eth0" address="10.2.1.4" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area3Subnet1Host1" names="eth0" address="10.3.1.1" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area3Subnet1Host2" names="eth0" address="10.3.1.2" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area3Subnet1Host3" names="eth0" address="10.3.1.3" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area3Router" names="eth0" address="10.3.1.4" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area1Subnet2Host1" names="wlan0" address="10.1.2.1" netmask="255.255.255.248" metric="-2147483648"/>
+   <interface hosts="twentyfour.Area1Subnet2Host2" names="wlan0" address="10.1.2.2" netmask="255.255.255.248" metric="-2147483648"/>
+   <interface hosts="twentyfour.Area1Subnet2Host3" names="wlan0" address="10.1.2.3" netmask="255.255.255.248" metric="-2147483648"/>
+   <interface hosts="twentyfour.Area1Router" names="eth1" address="10.1.2.4" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area2Subnet2Host1" names="eth0" address="10.2.2.1" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area2Router" names="eth1" address="10.2.2.4" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area2Subnet2Host2" names="eth0" address="10.2.2.2" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area2Subnet2Host3" names="eth0" address="10.2.2.3" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area3Subnet2Host1" names="wlan0" address="10.3.2.1" netmask="255.255.255.248" metric="-2147483648"/>
+   <interface hosts="twentyfour.Area3Subnet2Host2" names="wlan0" address="10.3.2.2" netmask="255.255.255.248" metric="-2147483648"/>
+   <interface hosts="twentyfour.Area3Subnet2Host3" names="wlan0" address="10.3.2.3" netmask="255.255.255.248" metric="-2147483648"/>
+   <interface hosts="twentyfour.Area3Router" names="eth1" address="10.3.2.4" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="twentyfour.Area1Router" names="eth2" address="10.1.3.2" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="twentyfour.Backbonerouter" names="eth0" address="10.1.3.1" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="twentyfour.Area2Router" names="eth2" address="10.2.3.2" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="twentyfour.Backbonerouter" names="eth2" address="10.2.3.1" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="twentyfour.Area3Router" names="eth2" address="10.3.3.2" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="twentyfour.Backbonerouter" names="eth1" address="10.3.3.1" netmask="255.255.255.252" metric="20"/>
+   <multicast-group hosts="twentyfour.Area1Subnet1Host0" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area1Subnet1Host1" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area1Subnet1Host2" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area1Router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyfour.Area2Subnet1Host1" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area2Subnet1Host2" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area2Subnet1Host3" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area2Router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyfour.Area3Subnet1Host1" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area3Subnet1Host2" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area3Subnet1Host3" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area3Router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyfour.Area1Subnet2Host1" interfaces="wlan0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area1Subnet2Host2" interfaces="wlan0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area1Subnet2Host3" interfaces="wlan0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area1Router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyfour.Area2Subnet2Host1" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area2Router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyfour.Area2Subnet2Host2" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area2Subnet2Host3" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area3Subnet2Host1" interfaces="wlan0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area3Subnet2Host2" interfaces="wlan0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area3Subnet2Host3" interfaces="wlan0" address="224.0.0.1"/>
+   <multicast-group hosts="twentyfour.Area3Router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyfour.Area1Router" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyfour.Backbonerouter" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyfour.Area2Router" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyfour.Backbonerouter" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyfour.Area3Router" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="twentyfour.Backbonerouter" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <wireless interfaces="twentyfour.Area1Subnet2Host1%wlan0 twentyfour.Area1Subnet2Host2%wlan0 twentyfour.Area1Subnet2Host3%wlan0 "/>
+   <wireless interfaces="twentyfour.Area3Subnet2Host1%wlan0 twentyfour.Area3Subnet2Host2%wlan0 twentyfour.Area3Subnet2Host3%wlan0 "/>
+   <route hosts="twentyfour.Area1Subnet1Host0" destination="10.1.1.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area1Subnet1Host0" destination="*" netmask="*" gateway="10.1.1.4" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area1Subnet1Host1" destination="10.1.1.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area1Subnet1Host1" destination="*" netmask="*" gateway="10.1.1.4" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area1Subnet1Host2" destination="10.1.1.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area1Subnet1Host2" destination="*" netmask="*" gateway="10.1.1.4" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area2Subnet1Host1" destination="10.2.1.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area2Subnet1Host1" destination="*" netmask="*" gateway="10.2.1.4" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area2Subnet1Host2" destination="10.2.1.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area2Subnet1Host2" destination="*" netmask="*" gateway="10.2.1.4" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area2Subnet1Host3" destination="10.2.1.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area2Subnet1Host3" destination="*" netmask="*" gateway="10.2.1.4" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area3Subnet1Host1" destination="10.3.1.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area3Subnet1Host1" destination="*" netmask="*" gateway="10.3.1.4" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area3Subnet1Host2" destination="10.3.1.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area3Subnet1Host2" destination="*" netmask="*" gateway="10.3.1.4" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area3Subnet1Host3" destination="10.3.1.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area3Subnet1Host3" destination="*" netmask="*" gateway="10.3.1.4" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area1Subnet2Host1" destination="10.1.2.0" netmask="255.255.255.248" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyfour.Area1Subnet2Host1" destination="*" netmask="*" gateway="10.1.2.4" interface="wlan0" metric="0"/>
+   <route hosts="twentyfour.Area1Subnet2Host2" destination="10.1.2.0" netmask="255.255.255.248" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyfour.Area1Subnet2Host2" destination="*" netmask="*" gateway="10.1.2.4" interface="wlan0" metric="0"/>
+   <route hosts="twentyfour.Area1Subnet2Host3" destination="10.1.2.0" netmask="255.255.255.248" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyfour.Area1Subnet2Host3" destination="*" netmask="*" gateway="10.1.2.4" interface="wlan0" metric="0"/>
+   <route hosts="twentyfour.Area2Subnet2Host1" destination="10.2.2.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area2Subnet2Host1" destination="*" netmask="*" gateway="10.2.2.4" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area2Subnet2Host2" destination="10.2.2.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area2Subnet2Host2" destination="*" netmask="*" gateway="10.2.2.4" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area2Subnet2Host3" destination="10.2.2.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area2Subnet2Host3" destination="*" netmask="*" gateway="10.2.2.4" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area3Subnet2Host1" destination="10.3.2.0" netmask="255.255.255.248" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyfour.Area3Subnet2Host1" destination="*" netmask="*" gateway="10.3.2.4" interface="wlan0" metric="0"/>
+   <route hosts="twentyfour.Area3Subnet2Host2" destination="10.3.2.0" netmask="255.255.255.248" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyfour.Area3Subnet2Host2" destination="*" netmask="*" gateway="10.3.2.4" interface="wlan0" metric="0"/>
+   <route hosts="twentyfour.Area3Subnet2Host3" destination="10.3.2.0" netmask="255.255.255.248" gateway="*" interface="wlan0" metric="0"/>
+   <route hosts="twentyfour.Area3Subnet2Host3" destination="*" netmask="*" gateway="10.3.2.4" interface="wlan0" metric="0"/>
+   <route hosts="twentyfour.Area1Router" destination="10.1.3.1" netmask="255.255.255.255" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="twentyfour.Area1Router" destination="10.1.1.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area1Router" destination="10.1.2.0" netmask="255.255.255.248" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="twentyfour.Area1Router" destination="10.2.0.0" netmask="255.254.0.0" gateway="10.1.3.1" interface="eth2" metric="0"/>
+   <route hosts="twentyfour.Area2Router" destination="10.2.3.1" netmask="255.255.255.255" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="twentyfour.Area2Router" destination="10.2.1.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area2Router" destination="10.2.2.0" netmask="255.255.255.248" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="twentyfour.Area2Router" destination="10.0.0.0" netmask="255.252.0.0" gateway="10.2.3.1" interface="eth2" metric="0"/>
+   <route hosts="twentyfour.Area3Router" destination="10.3.3.1" netmask="255.255.255.255" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="twentyfour.Area3Router" destination="10.3.1.0" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Area3Router" destination="10.3.2.0" netmask="255.255.255.248" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="twentyfour.Area3Router" destination="10.0.0.0" netmask="255.252.0.0" gateway="10.3.3.1" interface="eth2" metric="0"/>
+   <route hosts="twentyfour.Backbonerouter" destination="10.1.3.2" netmask="255.255.255.255" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Backbonerouter" destination="10.2.3.2" netmask="255.255.255.255" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="twentyfour.Backbonerouter" destination="10.3.3.2" netmask="255.255.255.255" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="twentyfour.Backbonerouter" destination="10.1.0.0" netmask="255.255.252.0" gateway="10.1.3.2" interface="eth0" metric="0"/>
+   <route hosts="twentyfour.Backbonerouter" destination="10.2.0.0" netmask="255.255.252.0" gateway="10.2.3.2" interface="eth2" metric="0"/>
+   <route hosts="twentyfour.Backbonerouter" destination="10.3.0.0" netmask="255.255.252.0" gateway="10.3.3.2" interface="eth1" metric="0"/>
+</config>

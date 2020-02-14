@@ -1,0 +1,13 @@
+<config>
+   <interface hosts='Area1Subnet1*' address='10.1.1.x' netmask='255.255.255.x'/>
+	<interface hosts='Area1Subnet2*' address='10.1.2.x' netmask='255.255.255.x'/>
+	<interface hosts='Area2Subnet1*' address='10.2.1.x' netmask='255.255.255.x'/>
+	<interface hosts='Area2Subnet2*' address='10.2.2.x' netmask='255.255.255.x'/>
+	<interface hosts='Area3Subnet1*' address='11.1.0.x' netmask='255.255.255.x'/>
+	<interface hosts='Area3Subnet2*' address='11.1.1.x' netmask='255.255.255.x'/>
+	<interface hosts='Area1*Router' address='10.1.x.x' netmask='255.255.x.x'/>
+	<interface hosts='Area2*Router' address='10.2.x.x' netmask='255.255.x.x'/>
+	<interface hosts='Area3*Router' address='11.1.x.x' netmask='255.255.x.x'/>
+	<interface hosts='Backbonerouter2' address='10.x.x.x' netmask='255.x.x.x'/>
+	<interface hosts='Backbonerouter4' address='11.x.x.x' netmask='255.x.x.x'/>
+</config>

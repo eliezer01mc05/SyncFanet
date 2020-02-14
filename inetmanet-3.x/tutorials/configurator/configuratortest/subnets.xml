@@ -1,0 +1,5 @@
+<config>
+   <interface hosts="ConfiguratorTest.Host{0-2}" names="eth0" address="10.0.1.x" netmask="255.255.255.x"/>
+   <interface hosts="ConfiguratorTest.Host{3-4}" names="eth0" address="10.0.2.x" netmask="255.255.255.x"/>
+   <interface hosts="ConfiguratorTest.router*" names="eth*" address="10.0.x.x" netmask="255.255.x.x"/>
+</config>

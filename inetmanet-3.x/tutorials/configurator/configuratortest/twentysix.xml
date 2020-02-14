@@ -1,0 +1,18 @@
+<config>
+	<interface hosts='Area1Subnet1*' address='10.1.1.x' netmask='255.255.255.x'/>
+	<interface hosts='Area1Subnet2*' address='10.1.2.x' netmask='255.255.255.x'/>
+	<interface hosts='Area2Subnet1*' address='10.2.1.x' netmask='255.255.255.x'/>
+	<interface hosts='Area2Subnet2*' address='10.2.2.x' netmask='255.255.255.x'/>
+	<interface hosts='Area3Subnet1*' address='10.3.1.x' netmask='255.255.255.x'/>
+	<interface hosts='Area3Subnet2*' address='10.3.2.x' netmask='255.255.255.x'/>
+	<interface hosts='Area4Subnet1*' address='10.4.1.x' netmask='255.255.255.x'/>
+	<interface hosts='Area4Subnet2*' address='10.4.2.x' netmask='255.255.255.x'/>
+	<interface hosts='Router1' address='10.1.3.x' netmask='255.255.255.x'/>
+	<interface hosts='Router2' address='10.2.3.x' netmask='255.255.255.x'/>
+	<interface hosts='Router3' address='10.3.3.x' netmask='255.255.255.x'/>
+	<interface hosts='Router4' address='10.4.3.x' netmask='255.255.255.x'/> 
+	<interface hosts='*' address='10.x.x.x' netmask='255.255.255.x'/>
+	<autoroute metric='hopCount' sourceHosts='**'>
+        <link interfaces='Router1.eth0' cost='infinite'/>
+    </autoroute>
+</config>

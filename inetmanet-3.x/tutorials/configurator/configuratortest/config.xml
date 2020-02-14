@@ -1,0 +1,45 @@
+<config>
+   <interface hosts="ConfiguratorTest.Host0" names="eth0" address="10.0.0.1" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ConfiguratorTest.router" names="eth0" address="10.0.0.2" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ConfiguratorTest.Host1" names="eth0" address="10.0.0.5" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ConfiguratorTest.router" names="eth1" address="10.0.0.6" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ConfiguratorTest.Host2" names="eth0" address="10.0.0.9" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ConfiguratorTest.router" names="eth2" address="10.0.0.10" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ConfiguratorTest.Host3" names="eth0" address="10.0.0.13" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ConfiguratorTest.router1" names="eth0" address="10.0.0.14" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ConfiguratorTest.Host4" names="eth0" address="10.0.0.17" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ConfiguratorTest.router1" names="eth1" address="10.0.0.18" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ConfiguratorTest.router" names="eth3" address="10.0.0.21" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ConfiguratorTest.router1" names="eth2" address="10.0.0.22" netmask="255.255.255.252" metric="20"/>
+   <multicast-group hosts="ConfiguratorTest.Host0" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ConfiguratorTest.router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ConfiguratorTest.Host1" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ConfiguratorTest.router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ConfiguratorTest.Host2" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ConfiguratorTest.router" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ConfiguratorTest.Host3" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ConfiguratorTest.router1" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ConfiguratorTest.Host4" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ConfiguratorTest.router1" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ConfiguratorTest.router" interfaces="eth3" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ConfiguratorTest.router1" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <route hosts="ConfiguratorTest.Host0" destination="10.0.0.0" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ConfiguratorTest.Host0" destination="*" netmask="*" gateway="10.0.0.2" interface="eth0" metric="0"/>
+   <route hosts="ConfiguratorTest.Host1" destination="10.0.0.4" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ConfiguratorTest.Host1" destination="*" netmask="*" gateway="10.0.0.6" interface="eth0" metric="0"/>
+   <route hosts="ConfiguratorTest.Host2" destination="10.0.0.8" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ConfiguratorTest.Host2" destination="*" netmask="*" gateway="10.0.0.10" interface="eth0" metric="0"/>
+   <route hosts="ConfiguratorTest.Host3" destination="10.0.0.12" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ConfiguratorTest.Host3" destination="*" netmask="*" gateway="10.0.0.14" interface="eth0" metric="0"/>
+   <route hosts="ConfiguratorTest.Host4" destination="10.0.0.16" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ConfiguratorTest.Host4" destination="*" netmask="*" gateway="10.0.0.18" interface="eth0" metric="0"/>
+   <route hosts="ConfiguratorTest.router" destination="10.0.0.22" netmask="255.255.255.255" gateway="*" interface="eth3" metric="0"/>
+   <route hosts="ConfiguratorTest.router" destination="10.0.0.0" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ConfiguratorTest.router" destination="10.0.0.4" netmask="255.255.255.252" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="ConfiguratorTest.router" destination="10.0.0.8" netmask="255.255.255.252" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="ConfiguratorTest.router" destination="10.0.0.0" netmask="255.255.255.224" gateway="10.0.0.22" interface="eth3" metric="0"/>
+   <route hosts="ConfiguratorTest.router1" destination="10.0.0.21" netmask="255.255.255.255" gateway="*" interface="eth2" metric="0"/>
+   <route hosts="ConfiguratorTest.router1" destination="10.0.0.12" netmask="255.255.255.252" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ConfiguratorTest.router1" destination="10.0.0.16" netmask="255.255.255.252" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="ConfiguratorTest.router1" destination="10.0.0.0" netmask="255.255.255.240" gateway="10.0.0.21" interface="eth2" metric="0"/>
+</config>

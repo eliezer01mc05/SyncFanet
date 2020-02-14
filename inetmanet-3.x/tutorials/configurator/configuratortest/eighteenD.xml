@@ -1,0 +1,144 @@
+<config>
+   <interface hosts="ultimatehierarchical2.Area1Router" names="eth0" address="10.1.2.2" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area1Subnet2Router" names="eth1" address="10.1.2.1" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area1Router" names="eth1" address="10.1.1.2" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area1Subnet1Router" names="eth1" address="10.1.1.1" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area1Router" names="eth2" address="10.1.2.5" netmask="255.255.255.252" metric="2"/>
+   <interface hosts="ultimatehierarchical2.Backbonerouter2" names="eth0" address="10.1.2.6" netmask="255.255.255.252" metric="2"/>
+   <interface hosts="ultimatehierarchical2.Area3Router" names="eth0" address="11.1.0.2" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area3Subnet1Router" names="eth1" address="11.1.0.1" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area3Router" names="eth1" address="11.1.1.2" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area3Subnet2Router" names="eth0" address="11.1.1.1" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area3Router" names="eth2" address="11.1.1.5" netmask="255.255.255.252" metric="2"/>
+   <interface hosts="ultimatehierarchical2.Backbonerouter4" names="eth0" address="11.1.1.6" netmask="255.255.255.252" metric="2"/>
+   <interface hosts="ultimatehierarchical2.Area1Subnet2Router" names="eth0" address="10.1.2.9" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area1Subnet2Host1" names="eth0" address="10.1.2.10" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area1Subnet2Host2" names="eth0" address="10.1.2.11" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area1Subnet2Host3" names="eth0" address="10.1.2.12" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area2Router" names="eth0" address="10.2.1.2" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area2Subnet1Router" names="eth1" address="10.2.1.1" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area2Router" names="eth1" address="10.2.2.2" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area2Subnet2Router" names="eth1" address="10.2.2.1" netmask="255.255.255.252" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area2Router" names="eth2" address="10.2.2.5" netmask="255.255.255.252" metric="2"/>
+   <interface hosts="ultimatehierarchical2.Backbonerouter2" names="eth2" address="10.2.2.6" netmask="255.255.255.252" metric="2"/>
+   <interface hosts="ultimatehierarchical2.Area2Subnet1Router" names="eth0" address="10.2.1.9" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area2Subnet1Host3" names="eth0" address="10.2.1.10" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area2Subnet1Host2" names="eth0" address="10.2.1.11" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area2Subnet1Host1" names="eth0" address="10.2.1.12" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area2Subnet2Router" names="eth0" address="10.2.2.9" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area2Subnet2Host1" names="eth0" address="10.2.2.10" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area2Subnet2Host2" names="eth0" address="10.2.2.11" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area2Subnet2Host3" names="eth0" address="10.2.2.12" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area3Subnet2Router" names="eth1" address="11.1.1.9" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area3Subnet2Host2" names="eth0" address="11.1.1.10" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area3Subnet2Host1" names="eth0" address="11.1.1.11" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area3Subnet1Router" names="eth0" address="11.1.0.9" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area3Subnet1Host1" names="eth0" address="11.1.0.10" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area3Subnet1Host2" names="eth0" address="11.1.0.11" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Backbonerouter2" names="eth1" address="10.2.2.17" netmask="255.255.255.252" metric="1"/>
+   <interface hosts="ultimatehierarchical2.Backbonerouter4" names="eth1" address="11.1.1.13" netmask="255.255.255.252" metric="1"/>
+   <interface hosts="ultimatehierarchical2.Area1Subnet1Host0" names="eth0" address="10.1.1.9" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area1Subnet1Host1" names="eth0" address="10.1.1.10" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area1Subnet1Host2" names="eth0" address="10.1.1.11" netmask="255.255.255.248" metric="20"/>
+   <interface hosts="ultimatehierarchical2.Area1Subnet1Router" names="eth0" address="10.1.1.12" netmask="255.255.255.248" metric="20"/>
+   <multicast-group hosts="ultimatehierarchical2.Area1Router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area1Subnet2Router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area1Router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area1Subnet1Router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area1Router" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Backbonerouter2" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area3Router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area3Subnet1Router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area3Router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area3Subnet2Router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area3Router" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Backbonerouter4" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area1Subnet2Router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area1Subnet2Host1" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Area1Subnet2Host2" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Area1Subnet2Host3" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Area2Router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area2Subnet1Router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area2Router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area2Subnet2Router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area2Router" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Backbonerouter2" interfaces="eth2" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area2Subnet1Router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area2Subnet1Host3" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Area2Subnet1Host2" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Area2Subnet1Host1" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Area2Subnet2Router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area2Subnet2Host1" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Area2Subnet2Host2" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Area2Subnet2Host3" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Area3Subnet2Router" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area3Subnet2Host2" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Area3Subnet2Host1" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Area3Subnet1Router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area3Subnet1Host1" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Area3Subnet1Host2" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Backbonerouter2" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Backbonerouter4" interfaces="eth1" address="224.0.0.1 224.0.0.2"/>
+   <multicast-group hosts="ultimatehierarchical2.Area1Subnet1Host0" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Area1Subnet1Host1" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Area1Subnet1Host2" interfaces="eth0" address="224.0.0.1"/>
+   <multicast-group hosts="ultimatehierarchical2.Area1Subnet1Router" interfaces="eth0" address="224.0.0.1 224.0.0.2"/>
+   <route hosts="ultimatehierarchical2.Area1Router" destination="10.1.1.8" netmask="255.255.255.248" gateway="10.1.1.1" interface="eth1" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Router" destination="10.1.2.8" netmask="255.255.255.248" gateway="10.1.2.1" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Router" destination="10.0.0.0" netmask="254.0.0.0" gateway="10.1.2.6" interface="eth2" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area3Router" destination="11.1.0.8" netmask="255.255.255.248" gateway="11.1.0.1" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area3Router" destination="11.1.1.8" netmask="255.255.255.248" gateway="11.1.1.1" interface="eth1" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area3Router" destination="10.0.0.0" netmask="255.252.0.0" gateway="11.1.1.6" interface="eth2" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet2Router" destination="10.1.2.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet2Router" destination="10.0.0.0" netmask="254.0.0.0" gateway="10.1.2.2" interface="eth1" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Router" destination="10.2.1.8" netmask="255.255.255.248" gateway="10.2.1.1" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Router" destination="10.2.2.8" netmask="255.255.255.248" gateway="10.2.2.1" interface="eth1" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Router" destination="10.0.0.0" netmask="254.0.0.0" gateway="10.2.2.6" interface="eth2" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet1Router" destination="10.2.1.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet1Router" destination="10.0.0.0" netmask="254.0.0.0" gateway="10.2.1.2" interface="eth1" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet2Router" destination="10.2.2.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet2Router" destination="10.0.0.0" netmask="254.0.0.0" gateway="10.2.2.2" interface="eth1" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area3Subnet2Router" destination="11.1.1.8" netmask="255.255.255.248" gateway="*" interface="eth1" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area3Subnet2Router" destination="10.0.0.0" netmask="254.0.0.0" gateway="11.1.1.2" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area3Subnet1Router" destination="11.1.0.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area3Subnet1Router" destination="10.0.0.0" netmask="254.0.0.0" gateway="11.1.0.2" interface="eth1" metric="0"/>
+   <route hosts="ultimatehierarchical2.Backbonerouter2" destination="11.1.0.0" netmask="255.255.254.0" gateway="11.1.1.13" interface="eth1" metric="0"/>
+   <route hosts="ultimatehierarchical2.Backbonerouter2" destination="10.1.0.0" netmask="255.255.252.0" gateway="10.1.2.5" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Backbonerouter2" destination="10.2.0.0" netmask="255.255.252.0" gateway="10.2.2.5" interface="eth2" metric="0"/>
+   <route hosts="ultimatehierarchical2.Backbonerouter4" destination="11.1.0.0" netmask="255.255.254.0" gateway="11.1.1.5" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Backbonerouter4" destination="10.0.0.0" netmask="255.252.0.0" gateway="10.2.2.17" interface="eth1" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet1Host0" destination="10.1.1.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet1Host0" destination="*" netmask="*" gateway="10.1.1.12" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet1Host1" destination="10.1.1.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet1Host1" destination="*" netmask="*" gateway="10.1.1.12" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet1Host2" destination="10.1.1.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet1Host2" destination="*" netmask="*" gateway="10.1.1.12" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet2Host1" destination="10.1.2.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet2Host1" destination="*" netmask="*" gateway="10.1.2.9" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet2Host2" destination="10.1.2.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet2Host2" destination="*" netmask="*" gateway="10.1.2.9" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet2Host3" destination="10.1.2.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet2Host3" destination="*" netmask="*" gateway="10.1.2.9" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet1Host1" destination="10.2.1.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet1Host1" destination="*" netmask="*" gateway="10.2.1.9" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet1Host2" destination="10.2.1.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet1Host2" destination="*" netmask="*" gateway="10.2.1.9" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet1Host3" destination="10.2.1.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet1Host3" destination="*" netmask="*" gateway="10.2.1.9" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet2Host1" destination="10.2.2.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet2Host1" destination="*" netmask="*" gateway="10.2.2.9" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet2Host2" destination="10.2.2.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet2Host2" destination="*" netmask="*" gateway="10.2.2.9" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet2Host3" destination="10.2.2.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area2Subnet2Host3" destination="*" netmask="*" gateway="10.2.2.9" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area3Subnet1Host1" destination="11.1.0.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area3Subnet1Host1" destination="*" netmask="*" gateway="11.1.0.9" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area3Subnet1Host2" destination="11.1.0.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area3Subnet1Host2" destination="*" netmask="*" gateway="11.1.0.9" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area3Subnet2Host1" destination="11.1.1.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area3Subnet2Host1" destination="*" netmask="*" gateway="11.1.1.9" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area3Subnet2Host2" destination="11.1.1.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area3Subnet2Host2" destination="*" netmask="*" gateway="11.1.1.9" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet1Router" destination="10.1.1.8" netmask="255.255.255.248" gateway="*" interface="eth0" metric="0"/>
+   <route hosts="ultimatehierarchical2.Area1Subnet1Router" destination="10.0.0.0" netmask="254.0.0.0" gateway="10.1.1.2" interface="eth1" metric="0"/>
+</config>
