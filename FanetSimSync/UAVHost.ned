@@ -1,11 +1,11 @@
-import uavnet.node.UAVBaseModel;
+import uavnet.node.UAVBaseModelWifi;
 import inet.applications.contract.IPingApp;
 
-module UAVHost extends UAVBaseModel {
+module UAVHost extends UAVBaseModelWifi {
     
 	parameters:
 		int numPingTestApps = default(0);
-		@display("i=old/delay;");
+		@display("i=misc/quadcopter-front");
 		
 	submodules:
 	     pingTestApp[numPingTestApps]: <default("PingTestApp")> like IPingApp {

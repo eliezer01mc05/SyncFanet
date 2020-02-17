@@ -1,0 +1,448 @@
+file 81509 1581945006                                           
+version 2
+run WithOLSR-0-20200217-10:07:24-4977
+attr configname WithOLSR
+attr datetime 20200217-10:07:24
+attr experiment WithOLSR
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network UAVNetwork
+attr processid 4977
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.host[*].routingProtocol "\"OLSR\""
+param **.constraintAreaMinZ 0m
+param **.constraintAreaMaxZ 0m
+param **.host[*].**.channelNumber 0
+param *.radioMedium.pathLossType "\"NakagamiFading\""
+param *.radioMedium.pathLoss.alpha 2.7
+param **.wlan[0].radio.displayInterferenceRange false
+param **.host[*].mobilityType "\"MassMobility\""
+param **.host[*].mobility.initFromDisplayString false
+param **.host[0].mobility.constraintAreaMinX 150m
+param **.host[0].mobility.constraintAreaMinY 200m
+param **.host[0].mobility.constraintAreaMaxX 250m
+param **.host[0].mobility.constraintAreaMaxY 300m
+param **.host[1].mobility.constraintAreaMinX 200m
+param **.host[1].mobility.constraintAreaMinY 250m
+param **.host[1].mobility.constraintAreaMaxX 300m
+param **.host[1].mobility.constraintAreaMaxY 350m
+param **.host[2].mobility.constraintAreaMinX 350m
+param **.host[2].mobility.constraintAreaMinY 150m
+param **.host[2].mobility.constraintAreaMaxX 450m
+param **.host[2].mobility.constraintAreaMaxY 250m
+param **.host[3].mobility.constraintAreaMinX 300m
+param **.host[3].mobility.constraintAreaMinY 450m
+param **.host[3].mobility.constraintAreaMaxX 500m
+param **.host[3].mobility.constraintAreaMaxY 550m
+param **.host[4].mobility.constraintAreaMinX 300m
+param **.host[4].mobility.constraintAreaMinY 350m
+param **.host[4].mobility.constraintAreaMaxX 500m
+param **.host[4].mobility.constraintAreaMaxY 450m
+param **.host[5].mobility.constraintAreaMinX 450m
+param **.host[5].mobility.constraintAreaMinY 450m
+param **.host[5].mobility.constraintAreaMaxX 550m
+param **.host[5].mobility.constraintAreaMaxY 550m
+param **.host[6].mobility.constraintAreaMinX 150m
+param **.host[6].mobility.constraintAreaMinY 450m
+param **.host[6].mobility.constraintAreaMaxX 250m
+param **.host[6].mobility.constraintAreaMaxY 550m
+param **.host[7].mobility.constraintAreaMinX 550m
+param **.host[7].mobility.constraintAreaMinY 250m
+param **.host[7].mobility.constraintAreaMaxX 650m
+param **.host[7].mobility.constraintAreaMaxY 350m
+param **.host[8].mobility.constraintAreaMinX 450m
+param **.host[8].mobility.constraintAreaMinY 0m
+param **.host[8].mobility.constraintAreaMaxX 550m
+param **.host[8].mobility.constraintAreaMaxY 100m
+param **.host[9].mobility.constraintAreaMinX 550m
+param **.host[9].mobility.constraintAreaMinY 150m
+param **.host[9].mobility.constraintAreaMaxX 650m
+param **.host[9].mobility.constraintAreaMaxY 250m
+param **.host[*].mobility.changeInterval "truncnormal(2s, 0.5s)"
+param **.host[*].mobility.changeAngleBy "normal(0deg, 30deg)"
+param **.host[*].mobility.speed "truncnormal(20mps, 8mps)"
+param **.host[*].mobility.updateInterval 100ms
+param **.pingTestApp[*].continuous true
+param *.host[*].pingTestApp[*].destAddr "\"*\""
+param *.host[*].pingTestApp[*].startTime uniform(0.001s,3s)
+param *.host[*].pingTestApp[*].sendInterval 0.5s
+param *.host[*].pingTestApp[*].printPing true
+param *.host[*].numPingTestApps 1
+param **.wlan[*].bitrate 11Mbps
+param *.host[*].wlan[*].radio.transmitter.power 100mW
+
+vector 0 UAVNetwork.host[0].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 UAVNetwork.host[0].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 2 UAVNetwork.host[1].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 3 UAVNetwork.host[1].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 4 UAVNetwork.host[2].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 5 UAVNetwork.host[2].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 6 UAVNetwork.host[3].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 7 UAVNetwork.host[3].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 8 UAVNetwork.host[0].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 9 UAVNetwork.host[1].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 10 UAVNetwork.host[2].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 11 UAVNetwork.host[3].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 12 UAVNetwork.host[0].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 13 UAVNetwork.host[0].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 14 UAVNetwork.host[0].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 15 UAVNetwork.host[0].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 16 UAVNetwork.host[0].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 17 UAVNetwork.host[1].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 18 UAVNetwork.host[1].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 19 UAVNetwork.host[1].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 20 UAVNetwork.host[1].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 21 UAVNetwork.host[1].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 22 UAVNetwork.host[2].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 23 UAVNetwork.host[2].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 24 UAVNetwork.host[2].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 25 UAVNetwork.host[2].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 26 UAVNetwork.host[2].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 27 UAVNetwork.host[3].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 28 UAVNetwork.host[3].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 29 UAVNetwork.host[3].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 30 UAVNetwork.host[3].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 31 UAVNetwork.host[3].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 32 UAVNetwork.host[0].pingTestApp[0] pingTxSeq:vector ETV
+attr interpolationmode none
+attr title "ping tx seq, vector"
+vector 33 UAVNetwork.host[0].lo0.lo rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 34 UAVNetwork.host[0].lo0.lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 35 UAVNetwork.host[0].pingTestApp[0] pingRxSeq:vector ETV
+attr interpolationmode none
+attr title "ping rx seq, vector"
+vector 36 UAVNetwork.host[1].pingTestApp[0] pingTxSeq:vector ETV
+attr interpolationmode none
+attr title "ping tx seq, vector"
+vector 37 UAVNetwork.host[2].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 38 UAVNetwork.host[2].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 39 UAVNetwork.host[2].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 40 UAVNetwork.host[1].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 41 UAVNetwork.host[1].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 42 UAVNetwork.host[0].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 43 UAVNetwork.host[0].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 44 UAVNetwork.host[3].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 45 UAVNetwork.host[3].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 46 UAVNetwork.host[2].pingTestApp[0] pingTxSeq:vector ETV
+attr interpolationmode none
+attr title "ping tx seq, vector"
+vector 47 UAVNetwork.host[1].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 48 UAVNetwork.host[1].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 49 UAVNetwork.host[1].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 50 UAVNetwork.host[3].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 51 UAVNetwork.host[3].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 52 UAVNetwork.host[3].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 53 UAVNetwork.host[2].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 54 UAVNetwork.host[2].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 55 UAVNetwork.host[1].lo0.lo rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 56 UAVNetwork.host[1].lo0.lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 57 UAVNetwork.host[1].pingTestApp[0] pingRxSeq:vector ETV
+attr interpolationmode none
+attr title "ping rx seq, vector"
+vector 58 UAVNetwork.host[1].pingTestApp[0] numLost:vector ETV
+attr interpolationmode none
+attr title "pings lost, vector"
+vector 59 UAVNetwork.host[0].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 60 UAVNetwork.host[0].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 61 UAVNetwork.host[0].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 62 UAVNetwork.host[3].pingTestApp[0] pingTxSeq:vector ETV
+attr interpolationmode none
+attr title "ping tx seq, vector"
+vector 63 UAVNetwork.host[2].lo0.lo rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 64 UAVNetwork.host[2].lo0.lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 65 UAVNetwork.host[2].pingTestApp[0] pingRxSeq:vector ETV
+attr interpolationmode none
+attr title "ping rx seq, vector"
+vector 66 UAVNetwork.host[2].pingTestApp[0] numLost:vector ETV
+attr interpolationmode none
+attr title "pings lost, vector"
+vector 67 UAVNetwork.host[0].pingTestApp[0] numLost:vector ETV
+attr interpolationmode none
+attr title "pings lost, vector"
+vector 68 UAVNetwork.host[3].lo0.lo rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 69 UAVNetwork.host[3].lo0.lo passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 70 UAVNetwork.host[3].pingTestApp[0] pingRxSeq:vector ETV
+attr interpolationmode none
+attr title "ping rx seq, vector"
+vector 71 UAVNetwork.host[3].pingTestApp[0] numLost:vector ETV
+attr interpolationmode none
+attr title "pings lost, vector"
+vector 72 UAVNetwork.host[2].networkLayer.arp sentReq:vector ETV
+attr title "ARP request sent, vector"
+vector 73 UAVNetwork.host[0].networkLayer.arp sentReply:vector ETV
+attr title "ARP replies sent, vector"
+vector 74 UAVNetwork.host[0].networkLayer.arp sentReq:vector ETV
+attr title "ARP request sent, vector"
+vector 75 UAVNetwork.host[1].networkLayer.arp sentReply:vector ETV
+attr title "ARP replies sent, vector"
+vector 76 UAVNetwork.host[0].pingTestApp[0] rtt:vector ETV
+attr interpolationmode none
+attr title "ping round-trip time, vector"
+attr unit s
+vector 77 UAVNetwork.host[3].networkLayer.arp sentReq:vector ETV
+attr title "ARP request sent, vector"
+0	16717 538 0 1020 0 4.648384990211 25 0 3 60 156
+1	17255 8 0 0 0 0 1 0 0 0 0
+2	17263 246 0 750 0 4.148695463274 12 0 3 27 69
+3	17509 8 0 0 0 0 1 0 0 0 0
+4	17517 520 0 1009 0 4.648374341791 24 0 3 57 147
+5	18037 8 0 0 0 0 1 0 0 0 0
+6	18045 154 0 891 0 4.533002966526 8 0 3 17 43
+7	18199 8 0 0 0 0 1 0 0 0 0
+8	18207 1220 0 1020 0 4.648384990211 54 0 3 72 162
+9	19427 1364 0 1022 0 4.648385216587 60 0 3 105 255
+10	20791 1157 0 1009 0 4.648374341791 49 0 3 64 142
+11	21948 894 0 1024 0 4.648385738792 38 0 3 67 163
+12	22842 2922 0 1020 0 4.648384990211 124 0 2 34 66
+13	25764 2262 0 1020 0 4.648384990211 96 0 0 0 0
+14	28026 2262 0 1020 0 4.648384990211 96 0 0 0 0
+15	30288 2262 0 1020 0 4.648384990211 96 0 0 0 0
+16	32550 2262 0 1020 0 4.648384990211 96 0 0 0 0
+17	34812 3322 0 1011 0 4.64837479573 140 0 2 34 62
+18	38134 2938 0 1011 0 4.64837479573 124 0 0 0 0
+19	41072 2938 0 1011 0 4.64837479573 124 0 0 0 0
+20	44010 2938 0 1011 0 4.64837479573 124 0 0 0 0
+21	46948 2938 0 1011 0 4.64837479573 124 0 0 0 0
+22	49886 3026 0 1003 0 4.648304341791 128 0 2 92 164
+23	52912 2264 0 1003 0 4.648304341791 96 0 0 0 0
+24	55176 2264 0 1003 0 4.648304341791 96 0 0 0 0
+25	57440 2264 0 1003 0 4.648304341791 96 0 0 0 0
+26	59704 2264 0 1003 0 4.648304341791 96 0 0 0 0
+27	61968 2456 0 1024 0 4.648385738792 104 0 2 12 24
+28	64424 2168 0 1024 0 4.648385738792 92 0 0 0 0
+29	66592 2168 0 1024 0 4.648385738792 92 0 0 0 0
+30	68760 2168 0 1024 0 4.648385738792 92 0 0 0 0
+31	70928 2168 0 1024 0 4.648385738792 92 0 0 0 0
+32	73096 160 77 909 1.64689169341 4.64689169341 7 0 6 21 91
+33	73256 118 80 646 1.64689169341 4.14724292594 5 56 84 392 31360
+34	73374 118 80 646 1.64689169341 4.14724292594 5 56 84 392 31360
+35	73492 94 87 1017 1.64689169341 4.648374990211 4 0 6 15 77
+36	73586 137 92 829 1.77894100455 4.27894100455 6 0 5 15 55
+37	73723 127 119 933 2.136328147259 4.646962341786 5 64 120 500 52112
+38	73850 280 122 1002 2.136328147259 4.648304341791 11 14 120 902 95900
+39	74130 1052 123 1009 2.136328147259 4.648374341791 44 0 2 44 66
+40	75182 612 131 1011 2.136390620195 4.64837479573 24 14 120 1896 191976
+41	75794 256 131 893 2.136390620195 4.533003640612 10 64 120 908 85904
+42	76050 384 136 1013 2.136390698577 4.648374990211 15 14 120 1246 125596
+43	76434 283 136 1013 2.136390698577 4.648374990211 11 64 120 1084 110608
+44	76717 382 141 995 2.136391088368 4.64763133934 15 14 120 1164 116576
+45	77099 154 141 623 2.136391088368 4.146942382917 6 64 100 564 54096
+46	77253 138 148 905 2.14585290555 4.64585290555 6 0 5 15 55
+47	77391 103 164 722 2.218793604989 4.148111463274 4 64 120 384 38496
+48	77494 128 167 743 2.218793604989 4.148625463274 5 14 120 398 38692
+49	77622 480 168 750 2.218793604989 4.148695463274 20 0 2 20 30
+50	78102 77 192 881 2.238832555828 4.532952966526 3 64 100 264 24096
+51	78179 77 195 884 2.238832555828 4.532952966526 3 64 100 264 24096
+52	78256 288 196 891 2.238832555828 4.533002966526 12 0 2 12 18
+53	78544 331 214 964 2.238895490384 4.647126341791 13 14 120 994 96076
+54	78875 179 214 927 2.238895490384 4.646962341786 7 64 120 648 62592
+55	79054 96 227 836 2.27894100455 4.27894100455 4 84 84 336 28224
+56	79150 96 227 836 2.27894100455 4.27894100455 4 84 84 336 28224
+57	79246 46 234 839 2.27894100455 4.27894100455 2 1 5 6 26
+58	79292 46 234 839 2.27894100455 4.27894100455 2 1 4 5 17
+59	79338 152 241 913 2.301381685189 4.64689169341 6 64 120 568 56992
+60	79490 302 244 1019 2.301381685189 4.648384990211 12 14 120 758 72372
+61	79792 1090 245 1021 2.301381685189 4.648384990211 46 0 2 47 71
+62	80882 120 282 876 2.532952966526 4.532952966526 5 0 4 10 30
+63	81002 48 330 334 3.14585290555 3.14585290555 2 84 84 168 14112
+64	81050 48 330 334 3.14585290555 3.14585290555 2 84 84 168 14112
+65	81098 23 337 337 3.14585290555 3.14585290555 1 2 2 2 4
+66	81121 23 337 337 3.14585290555 3.14585290555 1 2 2 2 4
+67	81144 23 386 386 3.64689169341 3.64689169341 1 3 3 3 9
+68	81167 50 467 471 4.032952966526 4.032952966526 2 84 84 168 14112
+69	81217 50 467 471 4.032952966526 4.032952966526 2 84 84 168 14112
+70	81267 24 474 474 4.032952966526 4.032952966526 1 3 3 3 9
+71	81291 24 474 474 4.032952966526 4.032952966526 1 3 3 3 9
+72	81315 23 513 513 4.14585290555 4.14585290555 1 1 1 1 1
+73	81338 24 536 536 4.145903521688 4.145903521688 1 1 1 1 1
+74	81362 23 595 595 4.14689169341 4.14689169341 1 1 1 1 1
+75	81385 24 613 613 4.146941872421 4.146941872421 1 1 1 1 1
+76	81409 75 756 1017 4.148695642513 4.648374990211 2 0.001483296801 0.001803949103 0.003287245904 5.4544017660713e-06
+77	81484 24 878 878 4.532952966526 4.532952966526 1 1 1 1 1
+
