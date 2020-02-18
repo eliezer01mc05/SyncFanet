@@ -18,17 +18,17 @@ network UAVNetworkHeterogeneous
         }
         channelZigbee: ConnectionManager {
             parameters:
-                @display("p=264,25");
+                @display("p=328,25");
         }
         channelBLE: ConnectionManager {
             parameters:
-                @display("p=413,28");
+                @display("p=521,25");
         }
         //channelControl: ChannelControl {
           //  @display("p=583,24");
         //}
-        
-        
+
+
         hostWifi_Master: WirelessHost {
             @display("r=,,#707070;p=328,93");
         }
@@ -36,7 +36,7 @@ network UAVNetworkHeterogeneous
             @display("r=,,#707070;p=158,208");
         }
         hostWifi_Ble: WirelessHost {
-            @display("r=,,#707070;p=502,193");
+            @display("r=,,#707070;p=482,194");
         }
         hostWifi: WirelessHost {
             @display("r=,,#707070;p=322,201");
@@ -51,9 +51,27 @@ network UAVNetworkHeterogeneous
             @display("r=,,#707070;p=389,346");
         }
         hostBle_2: WirelessHost {
-            @display("r=,,#707070;p=558,352");
+            @display("r=,,#707070;p=591,346");
         }
     connections:
-        
+        hostWifi_Master.radioOut[i] --> hostWifi_Zigbee.radioIn[i];
+        hostWifi_Master.radioIn[i] <-- hostWifi_Zigbee.radioOut[i];
 
+        hostWifi_Master.radioOut[i] --> hostWifi_Ble.radioIn[i];
+        hostWifi_Master.radioIn[i] <-- hostWifi_Ble.radioOut[i];
+
+        hostWifi_Master.radioOut[i] --> hostWifi.radioIn[i];
+        hostWifi_Master.radioIn[i] <-- hostWifi.radioOut[i];
+
+        hostWifi_Zigbee.radioOut[i] --> hostZigbee_1.radioIn[i];
+        hostWifi_Zigbee.radioIn[i] <-- hostZigbee_1.radioOut[i];
+
+        hostWifi_Zigbee.radioOut[i] --> hostZigbee_2.radioIn[i];
+        hostWifi_Zigbee.radioIn[i] <-- hostZigbee_2.radioOut[i];
+
+        hostWifi_Ble.radioOut[i] --> hostBle_1.radioIn[i];
+        hostWifi_Ble.radioIn[i] <-- hostBle_1.radioOut[i];
+
+        hostWifi_Ble.radioOut[i] --> hostBle_2.radioIn[i];
+        hostWifi_Ble.radioIn[i] <-- hostBle_2.radioOut[i];
 }

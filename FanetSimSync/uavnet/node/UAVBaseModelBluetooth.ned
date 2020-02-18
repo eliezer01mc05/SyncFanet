@@ -7,7 +7,7 @@ module UAVBaseModelBluetooth extends WirelessHost {
     
     parameters:
         @display("i=misc/quadcopter-front");
-        //wlan[*].mgmtType = default("Ieee80211MgmtAdhoc");  // use adhoc management
+        wlan[*].mgmtType = default("Ieee80211MgmtAdhoc");  // use adhoc management
         string routingProtocol @enum("AODVUU","DYMOUM","DYMO","DSRUU","OLSR","OLSR_ETX","DSDV_2","Batman") = default(""); 
         forwarding = default(true);
 
