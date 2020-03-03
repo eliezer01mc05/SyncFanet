@@ -8,6 +8,6 @@ package inet.node.inet;
 // which contains ~Ieee80211Nic with mgmtType = ~Ieee80211MgmtAP.
 //
 module WirelessHost extends StandardHost {
-    @display("i=misc/quadcopter-front");
+    @display("i=misc/node");
     numRadios = default(1);
 }

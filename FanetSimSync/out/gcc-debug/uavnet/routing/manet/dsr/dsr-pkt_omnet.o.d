@@ -2,14 +2,14 @@ out/gcc-debug//uavnet/routing/manet/dsr/dsr-pkt_omnet.o: \
  uavnet/routing/manet/dsr/dsr-pkt_omnet.cc \
  uavnet/routing/manet/dsr/dsr-pkt_omnet.h \
  uavnet/routing/manet/base/compatibility_dsr.h \
- /home/eliezer/Documents/omnetpp-5.5.1/include/omnetpp.h \
+ /home/eliezer/omnetpp-5.5.1/include/omnetpp.h \
  uavnet/routing/manet/dsr/dsr-uu/dsr-opt.h \
  uavnet/routing/manet/dsr/dsr-uu/dsr.h \
  uavnet/routing/manet/dsr/dsr-uu/dsr-pkt.h \
  ../inetmanet-3.x/src/inet/common/INETDefs.h \
  ../inetmanet-3.x/src/inet/common/precompiled.h \
- /home/eliezer/Documents/omnetpp-5.5.1/include/platdep/sockets.h \
- /home/eliezer/Documents/omnetpp-5.5.1/include/omnetpp/platdep/sockets.h \
+ /home/eliezer/omnetpp-5.5.1/include/platdep/sockets.h \
+ /home/eliezer/omnetpp-5.5.1/include/omnetpp/platdep/sockets.h \
  ../inetmanet-3.x/src/inet/opp_defines.h \
  ../inetmanet-3.x/src/inet/features.h \
  ../inetmanet-3.x/src/inet/common/Compat.h \
@@ -37,7 +37,7 @@ uavnet/routing/manet/dsr/dsr-pkt_omnet.h:
 
 uavnet/routing/manet/base/compatibility_dsr.h:
 
-/home/eliezer/Documents/omnetpp-5.5.1/include/omnetpp.h:
+/home/eliezer/omnetpp-5.5.1/include/omnetpp.h:
 
 uavnet/routing/manet/dsr/dsr-uu/dsr-opt.h:
 
@@ -49,9 +49,9 @@ uavnet/routing/manet/dsr/dsr-uu/dsr-pkt.h:
 
 ../inetmanet-3.x/src/inet/common/precompiled.h:
 
-/home/eliezer/Documents/omnetpp-5.5.1/include/platdep/sockets.h:
+/home/eliezer/omnetpp-5.5.1/include/platdep/sockets.h:
 
-/home/eliezer/Documents/omnetpp-5.5.1/include/omnetpp/platdep/sockets.h:
+/home/eliezer/omnetpp-5.5.1/include/omnetpp/platdep/sockets.h:
 
 ../inetmanet-3.x/src/inet/opp_defines.h:
 

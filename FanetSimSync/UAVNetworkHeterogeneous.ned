@@ -2,6 +2,7 @@ import base.connectionManager.ConnectionManager;
 //import inet.world.radio.ChannelControl;
 import inet.node.inet.WirelessHost;
 import samples.hybrid.WirelessHostWithBattery;
+import inet.node.inet.SensorNode;
 
 
 network UAVNetworkHeterogeneous
@@ -29,7 +30,7 @@ network UAVNetworkHeterogeneous
         //}
 
 
-        hostWifi_Master: WirelessHost {
+        hostWifi_Master: WirelessHost { //only wifi ok
             @display("r=,,#707070;p=328,93");
         }
         hostWifi_Zigbee: WirelessHost {
@@ -38,13 +39,13 @@ network UAVNetworkHeterogeneous
         hostWifi_Ble: WirelessHost {
             @display("r=,,#707070;p=482,194");
         }
-        hostWifi: WirelessHost {
+        hostWifi: WirelessHost { //only wifi ok
             @display("r=,,#707070;p=322,201");
         }
-        hostZigbee_1: WirelessHostWithBattery {
+        hostZigbee_1: SensorNode { //only zigbee ok
             @display("p=49,346");
         }
-        hostZigbee_2: WirelessHostWithBattery {
+        hostZigbee_2: SensorNode { //only zigbee ok
             @display("p=225,346");
         }
         hostBle_1: WirelessHost {

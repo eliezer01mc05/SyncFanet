@@ -22,14 +22,16 @@ package inet.linklayer.loopback;
 
 import inet.common.IHook;
 import inet.linklayer.contract.INic;
+import inet.networklayer.common.InterfaceEntry;
 
 
 //
 // Loopback interface. Complements the ~Loopback module.
 //
-module LoopbackInterface like INic
+module LoopbackInterface extends InterfaceEntry like INic
 {
     parameters:
+        @class(InterfaceEntry);
         @display("i=block/ifcard;bgb=214,249;bgl=53");
         string interfaceTableModule;
         int numOutputHooks = default(0);

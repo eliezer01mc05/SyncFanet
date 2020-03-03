@@ -3,9 +3,9 @@ out/gcc-debug//uavnet/routing/manet/dsr/dsr-uu/DsrDataBase.o: \
  uavnet/routing/manet/dsr/dsr-uu/DsrDataBase.h \
  ../inetmanet-3.x/src/inet/common/INETDefs.h \
  ../inetmanet-3.x/src/inet/common/precompiled.h \
- /home/eliezer/Documents/omnetpp-5.5.1/include/platdep/sockets.h \
- /home/eliezer/Documents/omnetpp-5.5.1/include/omnetpp/platdep/sockets.h \
- /home/eliezer/Documents/omnetpp-5.5.1/include/omnetpp.h \
+ /home/eliezer/omnetpp-5.5.1/include/platdep/sockets.h \
+ /home/eliezer/omnetpp-5.5.1/include/omnetpp/platdep/sockets.h \
+ /home/eliezer/omnetpp-5.5.1/include/omnetpp.h \
  ../inetmanet-3.x/src/inet/opp_defines.h \
  ../inetmanet-3.x/src/inet/features.h \
  ../inetmanet-3.x/src/inet/common/Compat.h \
@@ -23,11 +23,11 @@ uavnet/routing/manet/dsr/dsr-uu/DsrDataBase.h:
 
 ../inetmanet-3.x/src/inet/common/precompiled.h:
 
-/home/eliezer/Documents/omnetpp-5.5.1/include/platdep/sockets.h:
+/home/eliezer/omnetpp-5.5.1/include/platdep/sockets.h:
 
-/home/eliezer/Documents/omnetpp-5.5.1/include/omnetpp/platdep/sockets.h:
+/home/eliezer/omnetpp-5.5.1/include/omnetpp/platdep/sockets.h:
 
-/home/eliezer/Documents/omnetpp-5.5.1/include/omnetpp.h:
+/home/eliezer/omnetpp-5.5.1/include/omnetpp.h:
 
 ../inetmanet-3.x/src/inet/opp_defines.h:
 

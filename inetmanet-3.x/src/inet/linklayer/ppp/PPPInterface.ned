@@ -23,13 +23,14 @@ import inet.common.IHook;
 import inet.common.queue.IOutputQueue;
 import inet.linklayer.contract.ITrafficConditioner;
 import inet.linklayer.contract.IWiredNic;
+import inet.networklayer.common.InterfaceEntry;
 
 
 //
 // PPP interface. Complements the ~PPP module with an output queue
 // for QoS and RED support.
 //
-module PPPInterface like IWiredNic
+module PPPInterface extends InterfaceEntry like IWiredNic
 {
     parameters:
         @display("i=block/ifcard;bgb=214,249;bgl=53");

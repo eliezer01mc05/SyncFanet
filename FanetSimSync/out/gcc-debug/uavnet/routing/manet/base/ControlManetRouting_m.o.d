@@ -1,12 +1,12 @@
 out/gcc-debug//uavnet/routing/manet/base/ControlManetRouting_m.o: \
  uavnet/routing/manet/base/ControlManetRouting_m.cc \
  uavnet/routing/manet/base/ControlManetRouting_m.h \
- /home/eliezer/Documents/omnetpp-5.5.1/include/omnetpp.h \
+ /home/eliezer/omnetpp-5.5.1/include/omnetpp.h \
  ../inetmanet-3.x/src/inet/networklayer/common/L3Address.h \
  ../inetmanet-3.x/src/inet/common/INETDefs.h \
  ../inetmanet-3.x/src/inet/common/precompiled.h \
- /home/eliezer/Documents/omnetpp-5.5.1/include/platdep/sockets.h \
- /home/eliezer/Documents/omnetpp-5.5.1/include/omnetpp/platdep/sockets.h \
+ /home/eliezer/omnetpp-5.5.1/include/platdep/sockets.h \
+ /home/eliezer/omnetpp-5.5.1/include/omnetpp/platdep/sockets.h \
  ../inetmanet-3.x/src/inet/opp_defines.h \
  ../inetmanet-3.x/src/inet/features.h \
  ../inetmanet-3.x/src/inet/common/Compat.h \
@@ -19,7 +19,7 @@ out/gcc-debug//uavnet/routing/manet/base/ControlManetRouting_m.o: \
 
 uavnet/routing/manet/base/ControlManetRouting_m.h:
 
-/home/eliezer/Documents/omnetpp-5.5.1/include/omnetpp.h:
+/home/eliezer/omnetpp-5.5.1/include/omnetpp.h:
 
 ../inetmanet-3.x/src/inet/networklayer/common/L3Address.h:
 
@@ -27,9 +27,9 @@ uavnet/routing/manet/base/ControlManetRouting_m.h:
 
 ../inetmanet-3.x/src/inet/common/precompiled.h:
 
-/home/eliezer/Documents/omnetpp-5.5.1/include/platdep/sockets.h:
+/home/eliezer/omnetpp-5.5.1/include/platdep/sockets.h:
 
-/home/eliezer/Documents/omnetpp-5.5.1/include/omnetpp/platdep/sockets.h:
+/home/eliezer/omnetpp-5.5.1/include/omnetpp/platdep/sockets.h:
 
 ../inetmanet-3.x/src/inet/opp_defines.h:
 
